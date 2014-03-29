@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sat Mar 29 21:15:40 2014 tran_1
-** Last update Sat Mar 29 21:17:45 2014 tran_1
+** Last update Sat Mar 29 21:29:24 2014 tran_1
 */
 
 #include "../includes/main.h"
@@ -22,8 +22,8 @@ char	*my_strcpy(char *dest, char *src, int begin, int end)
   while (begin <= end)
     {
       dest[i] = src[begin];
-      ++i;
-      ++begin;
+      i++;
+      begin++;
     }
   dest[i] = '\0';
   return (dest);

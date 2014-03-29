@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sat Mar 29 21:13:26 2014 tran_1
-** Last update Sat Mar 29 21:15:28 2014 tran_1
+** Last update Sat Mar 29 21:32:17 2014 tran_1
 */
 
 #include "../includes/main.h"
@@ -17,8 +17,8 @@ char	*my_strcat(char *dest, char *src)
 
   i = 0;
   j = my_strlen(dest);
-  while (src[j])
-    dest[i++] = src[j++];
-  dest[i] = '\0';
+  while (src[i])
+    dest[j++] = src[i++];
+  dest[j] = '\0';
   return (dest);
 }

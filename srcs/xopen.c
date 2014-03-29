@@ -5,11 +5,15 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sat Mar 29 12:12:24 2014 tran_1
-** Last update Sat Mar 29 13:11:01 2014 tran_1
+** Last update Sat Mar 29 13:24:48 2014 tran_1
 */
 
 #include "../includes/main.h"
 
+/*
+** Check if the file name has .s extension
+** return 0 if it is and -1 if failed 
+*/
 int	check_file(char *str)
 {
   int	i;
@@ -18,9 +22,14 @@ int	check_file(char *str)
   if (str[i - 1] == 's' && str[i - 2] == '.')
     return (0);
   else
-    return (1);
+    return (-1);
 }
 
+/*
+** Open file 
+** and create file_name.s to file_name.cor if
+** this one doesn't exist 
+*/
 void	xopen(char *str, t_open *opn)
 {
   if ((opn->name = malloc(sizeof(*opn->name))) == NULL)

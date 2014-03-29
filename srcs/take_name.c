@@ -5,11 +5,16 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Fri Mar 28 23:07:07 2014 tran_1
-** Last update Sat Mar 29 11:44:32 2014 tran_1
+** Last update Sat Mar 29 13:22:46 2014 tran_1
 */
 
 #include "../includes/main.h"
 
+/*
+** Get the file name
+** Copy the file name without extension (my_strcpy)
+** And concat the file name with .cor extension (my_strcat)
+*/
 char	*take_name(char *str)
 {
   int	i;

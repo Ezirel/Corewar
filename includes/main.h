@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Fri Mar 28 22:40:00 2014 tran_1
-** Last update Sat Mar 29 13:07:34 2014 tran_1
+** Last update Sun Mar 30 00:19:35 2014 tran_1
 */
 
 #ifndef		MAIN_H_
@@ -28,6 +28,9 @@ void		my_putstr(char *str);
 int		my_strlen(char *str);
 char		*my_strcpy(char *dest, char *src, int begin, int enb);
 char		*my_strcat(char *dest, char *src);
+int		my_strcmp(char *str1, char *str2);
 char		*take_name(char *str);
 void		xopen(char *str, t_open *opn);
+void		xread(t_open *opn);
+void		parser_header(t_open *opn, char *code_to_read);
 #endif		/* MAIN_H_ */

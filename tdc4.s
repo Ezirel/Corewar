@@ -1,10 +1,9 @@
 # How are you ?
 # There is a comment
 
-.name 		"dtonc v1.0pl4"
+.name		"dtonc v1.0pl4"
 .comment	"ta mere elle fait du rodeo sur les kfar"
-.extend
-
+.extend		
 
 debut:	
 	st	r1, :li1+1
@@ -12,7 +11,7 @@ debut:
 	ld	%100, r4
 	ld	%4, r6
 	ld	%0, r3
-li1:	
+li1:
 	live	%1
 	
 cp:	

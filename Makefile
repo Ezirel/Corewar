@@ -5,7 +5,7 @@
 ## Login   <tran_1@epitech.eu>
 ## 
 ## Started on  Sat Mar 29 10:00:19 2014 tran_1
-## Last update Sat Mar 29 21:19:40 2014 tran_1
+## Last update Sat Mar 29 23:43:16 2014 tran_1
 ##
 
 CC	= gcc
@@ -21,12 +21,13 @@ SRCS	= $(LIB)my_putchar.c\
 	  $(LIB)my_strlen.c\
 	  $(LIB)my_strcat.c\
 	  $(LIB)my_strcpy.c\
+	  $(LIB)my_strcmp.c\
 	  $(DIR)main.c\
 	  $(DIR)take_name.c\
 	  $(DIR)xopen.c\
 	  $(DIR)xread.c\
 	  $(DIR)struct_init.c\
-	  $(DIR)parser_comment.c\
+	  $(DIR)parser_header.c\
 
 OBJS	= $(SRCS:.c=.o)
 

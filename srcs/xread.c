@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sat Mar 29 13:48:12 2014 tran_1
-** Last update Sat Mar 29 21:04:12 2014 tran_1
+** Last update Sun Mar 30 00:18:59 2014 tran_1
 */
 
 #include "../includes/main.h"
@@ -20,6 +20,6 @@ void	xread(t_open *opn)
 
   if ((res = read(opn->fd, buffer, 5016)) == -1)
     exit(0);
-  parser_comment(buffer);
+  parser_header(opn, buffer);
   close(opn->fd);
 }

@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sat Mar 29 12:12:24 2014 tran_1
-** Last update Sun Mar 30 00:23:41 2014 tran_1
+** Last update Sun Mar 30 05:53:25 2014 tran_1
 */
 
 #include "../includes/main.h"
@@ -41,7 +41,7 @@ void	xopen(char *str, t_open *opn)
       if (check_file(str) == 0)
 	{
 	  opn->name = take_name(str);
-	  if ((opn->fd2 = open(opn->name, O_CREAT | O_WRONLY, 722)) == -1)
+	  if ((opn->fd2 = open(opn->name, O_CREAT | O_WRONLY | O_RDONLY, 777)) == -1)
 	    exit(0);
 	}
       else

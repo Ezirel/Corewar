@@ -1,12 +1,12 @@
-# How are you ?
-# There is a comment
+#How are you guys ?
+#This is the best champion ever
 
 .name		"dtonc v1.0pl4"
 .comment	"ta mere elle fait du rodeo sur les kfar"
 .extend		
 
 debut:	
-	st	r1, :li1+1
+	st	r1, :li1+1 #This line is st with a register and call function
 	st	r1, :li2+1
 	ld	%100, r4
 	ld	%4, r6

@@ -5,12 +5,16 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sun Mar 30 12:42:36 2014 tran_1
-** Last update Sun Mar 30 12:58:33 2014 tran_1
+** Last update Sun Mar 30 20:53:32 2014 tran_1
 */
 
 #include "../includes/main.h"
 #include "../includes/op.h"
 
+/*
+** Parser Comment, characters from # until \n 
+** will be replace by \0 
+*/
 void	parser_comment(header_t *h, t_open *opn, char *code_to_read)
 {
   int	i;

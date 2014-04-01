@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Fri Mar 28 22:40:00 2014 tran_1
-** Last update Sun Mar 30 13:00:49 2014 tran_1
+** Last update Tue Apr  1 10:59:20 2014 tran_1
 */
 
 #ifndef		MAIN_H_
@@ -21,7 +21,6 @@ typedef struct	s_open
   int		fd;
   int		fd2;
   char		*name;
-
 }		t_open;
 
 void		my_putchar(char c);
@@ -36,5 +35,6 @@ void		xread(t_open *opn);
 void		parser_header(header_t *h, t_open *opn, char *code_to_read);
 void		write_name(header_t *h, t_open *opn, char *code_to_read);
 void		parser_comment(header_t *h, t_open *opn, char *code_to_read);
+void		create_exe(t_open *opn, char *str);
 
 #endif		/* MAIN_H_ */

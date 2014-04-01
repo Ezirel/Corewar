@@ -5,10 +5,11 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sat Mar 29 13:48:12 2014 tran_1
-** Last update Sun Mar 30 12:52:32 2014 tran_1
+** Last update Tue Apr  1 10:58:03 2014 tran_1
 */
 
 #include "../includes/main.h"
+#include "../includes/get_next_line.h"
 
 /*
 ** Read file
@@ -17,11 +18,8 @@ void		xread(t_open *opn)
 {
   header_t	h;
   int		res;
-  char		buffer[5016];
+  char		*name;
 
-  if ((res = read(opn->fd, buffer, 5016)) == -1)
-    exit(0);
-  parser_header(&h, opn, buffer);
-  parser_comment(&h, opn, buffer);
-  close(opn->fd);
+  name = get_next_line(opn->fd);
+  printf("%s\n", name);
 }

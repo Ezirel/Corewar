@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Fri Mar 28 22:40:00 2014 tran_1
-** Last update Tue Apr  1 11:33:20 2014 tran_1
+** Last update Thu Apr 10 10:37:19 2014 tran_1
 */
 
 #ifndef		MAIN_H_
@@ -20,7 +20,9 @@ typedef struct	s_open
 {
   int		fd;
   int		fd2;
+  char		**file;
   char		*name;
+
 }		t_open;
 
 void		my_putchar(char c);
@@ -30,7 +32,7 @@ char		*my_strcpy(char *dest, char *src, int begin, int enb);
 char		*my_strcat(char *dest, char *src);
 int		my_strcmp(char *str1, char *str2);
 char		*take_name(char *str);
-void		xopen(char **str, t_open *opn);
+void		xopen(char *str, t_open *opn);
 void		xread(t_open *opn);
 void		parser_header(header_t *h, t_open *opn, char *code_to_read);
 void		write_name(header_t *h, t_open *opn, char *code_to_read);

@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Fri Mar 28 22:18:42 2014 tran_1
-** Last update Tue Apr  1 11:34:34 2014 tran_1
+** Last update Thu Apr 10 10:57:07 2014 tran_1
 */
 
 #include "../includes/main.h"
@@ -13,17 +13,18 @@
 int		main(int ac, char **av)
 {
   t_open	*opn;
-  int		i;
 
-  i = 0;
   if (ac == 1)
     {
       my_putstr("asm: fatal error: no input file\n");
       my_putstr("Compilation terminated\n");
       return (0);
     }
-  struct_init(&opn);
-  xopen(av, opn);
-  xread(opn);
+  else
+    {
+      struct_init(&opn);
+      xopen(av[1], opn);
+      printf("OK \n");
+    }
   return (0);
 }

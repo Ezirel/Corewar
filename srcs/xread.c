@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sat Mar 29 13:48:12 2014 tran_1
-** Last update Tue Apr  1 10:58:03 2014 tran_1
+** Last update Thu Apr 10 11:09:20 2014 tran_1
 */
 
 #include "../includes/main.h"
@@ -16,10 +16,11 @@
 */
 void		xread(t_open *opn)
 {
-  header_t	h;
-  int		res;
   char		*name;
 
-  name = get_next_line(opn->fd);
-  printf("%s\n", name);
+  while ((name = get_next_line(opn->fd)))
+    {
+      my_putstr(name);
+      my_putchar(10);
+    }
 }

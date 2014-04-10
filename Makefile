@@ -5,7 +5,7 @@
 ## Login   <tran_1@epitech.eu>
 ## 
 ## Started on  Sat Mar 29 10:00:19 2014 tran_1
-## Last update Tue Apr  1 11:11:48 2014 tran_1
+## Last update Thu Apr 10 11:03:39 2014 tran_1
 ##
 
 CC	= gcc
@@ -28,9 +28,6 @@ SRCS	= $(LIB)my_putchar.c\
 	  $(DIR)xopen.c\
 	  $(DIR)xread.c\
 	  $(DIR)struct_init.c\
-	  $(DIR)parser_header.c\
-	  $(DIR)parser_comment.c\
-	  $(DIR)write_name.c\
 	  $(DIR)create_exe.c\
 	  $(DIR)check_file.c\
 

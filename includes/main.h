@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Fri Mar 28 22:40:00 2014 tran_1
-** Last update Thu Apr 10 10:37:19 2014 tran_1
+** Last update Thu Apr 10 11:16:50 2014 tran_1
 */
 
 #ifndef		MAIN_H_
@@ -34,9 +34,6 @@ int		my_strcmp(char *str1, char *str2);
 char		*take_name(char *str);
 void		xopen(char *str, t_open *opn);
 void		xread(t_open *opn);
-void		parser_header(header_t *h, t_open *opn, char *code_to_read);
-void		write_name(header_t *h, t_open *opn, char *code_to_read);
-void		parser_comment(header_t *h, t_open *opn, char *code_to_read);
 void		create_exe(t_open *opn, char *str);
 
 #endif		/* MAIN_H_ */

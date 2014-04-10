@@ -5,7 +5,7 @@
 ## Login   <tran_1@epitech.eu>
 ## 
 ## Started on  Sat Mar 29 10:00:19 2014 tran_1
-## Last update Thu Apr 10 11:23:52 2014 tran_1
+## Last update Thu Apr 10 11:57:39 2014 tran_1
 ##
 
 CC	= gcc
@@ -27,7 +27,6 @@ SRCS	= $(LIB)my_putchar.c\
 	  $(DIR)take_name.c\
 	  $(DIR)xopen.c\
 	  $(DIR)xread.c\
-	  $(DIR)malloc_file.c\
 	  $(DIR)struct_init.c\
 	  $(DIR)create_exe.c\
 	  $(DIR)check_file.c\

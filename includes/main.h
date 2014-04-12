@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Fri Mar 28 22:40:00 2014 tran_1
-** Last update Thu Apr 10 11:16:50 2014 tran_1
+** Last update Sat Apr 12 14:51:10 2014 tran_1
 */
 
 #ifndef		MAIN_H_
@@ -14,6 +14,7 @@
 # include	<stdio.h>
 # include	<stdlib.h>
 # include	<unistd.h>
+# include	<string.h>
 # include	"op.h"
 
 typedef struct	s_open
@@ -25,6 +26,13 @@ typedef struct	s_open
 
 }		t_open;
 
+typedef struct	s_list
+{
+  char		*name;
+  struct s_list	*next;
+
+}		t_list;
+
 void		my_putchar(char c);
 void		my_putstr(char *str);
 int		my_strlen(char *str);
@@ -32,8 +40,9 @@ char		*my_strcpy(char *dest, char *src, int begin, int enb);
 char		*my_strcat(char *dest, char *src);
 int		my_strcmp(char *str1, char *str2);
 char		*take_name(char *str);
-void		xopen(char *str, t_open *opn);
-void		xread(t_open *opn);
+void		xopen(char *str, t_open *opn, t_list *list);
+void		xread(t_open *opn, t_list *list);
 void		create_exe(t_open *opn, char *str);
-
+void		add_elem(t_list **list, char *name);
+void		show_list(t_list *list);
 #endif		/* MAIN_H_ */

@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Sat Mar 29 13:48:12 2014 tran_1
-** Last update Sat Apr 12 14:28:58 2014 tran_1
+** Last update Sat Apr 12 14:52:49 2014 tran_1
 */
 
 #include "../includes/main.h"
@@ -14,13 +14,9 @@
 /*
 ** Read file
 */
-void		xread(t_open *opn)
+void		xread(t_open *opn, t_list *list)
 {
-  char		*name;
-
-  while ((name = get_next_line(opn->fd)))
-    {
-      my_putstr(name);
-      my_putchar(10);
-    }
+  while ((opn->name = get_next_line(opn->fd)))
+    add_elem(&list, opn->name);
+  //show_list(list);
 }

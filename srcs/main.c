@@ -5,7 +5,7 @@
 ** Login   <tran_1@epitech.eu>
 ** 
 ** Started on  Fri Mar 28 22:18:42 2014 tran_1
-** Last update Thu Apr 10 10:57:07 2014 tran_1
+** Last update Sat Apr 12 14:50:54 2014 tran_1
 */
 
 #include "../includes/main.h"
@@ -13,6 +13,7 @@
 int		main(int ac, char **av)
 {
   t_open	*opn;
+  t_list	*list;
 
   if (ac == 1)
     {
@@ -22,9 +23,8 @@ int		main(int ac, char **av)
     }
   else
     {
-      struct_init(&opn);
-      xopen(av[1], opn);
-      printf("OK \n");
+      struct_init(&opn, &list);
+      xopen(av[1], opn, list);
     }
   return (0);
 }
